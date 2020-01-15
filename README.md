@@ -45,7 +45,7 @@ Now go into your FTX account and execute a small market order ($1 or so) to test
 
 **Important:** You have to keep the cmd window open to run rectalert for now. I'll release a GUI version that runs nicely in the background soon. If you don't want to wait you can use nssm.exe to register rektalert as a windows service.
 
-Here's a snipped you can use to register rektalert with [nssm.exe](https://nssm.cc/release/nssm-2.24.zip). You need to execute those commands in a cmd with administrator rights. You can watch my tutorial video to see how it works: https://youtu.be/MG0AnfOB_AA
+Here's a snipped you can use to register rektalert with [nssm.exe](https://nssm.cc/release/nssm-2.24.zip). You need to execute those commands in a cmd with administrator rights. You can watch my tutorial video to see this in detail: https://youtu.be/MG0AnfOB_AA
 
 ```cmd
 .\nssm.exe install rektalert "C:\[PATH_TO_REKTALERT]\rektalert.exe" "monitor"
