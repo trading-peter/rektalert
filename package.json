@@ -1,0 +1,31 @@
+{
+  "name": "rektalert",
+  "version": "1.0.0",
+  "description": "Get Telegram notifications if orders are filled. Compatible with the FTX Crypto Derivatives Exchange.",
+  "main": "src/index.js",
+  "bin": "src/cli.js",
+  "repository": "https://github.com/pkaske/rektalert.git",
+  "author": "trading_peter",
+  "license": "Apache 2.0",
+  "private": false,
+  "scripts": {
+    "pkg-win": "pkg -t node12-win-x64 --out-path ./dist/win ./package.json",
+    "pkg-linux": "pkg -t node12-linux-x64 --out-path ./dist/linux ./package.json"
+  },
+  "pkg": {
+    "assets": [
+      "./package.json"
+    ]
+  },
+  "dependencies": {
+    "@hapi/joi": "^16.0.0",
+    "caporal": "^1.3.0",
+    "conf": "^6.2.0",
+    "ftx-api-ws": "pkaske/ftx-api-ws#node_compat",
+    "inquirer": "^7.0.3",
+    "keytar": "^5.0.0",
+    "node-telegram-bot-api": "^0.40.0",
+    "pkg": "^4.4.2",
+    "secure-random-password": "^0.2.1"
+  }
+}
